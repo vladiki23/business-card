@@ -34,7 +34,7 @@ const About = () => {
                     <a href="" className="me-3">
                         <i className="bi bi-vimeo"></i>
                     </a>
-                    <a href="/">
+                    <a href="">
                         <i className="bi bi-instagram"></i>
                     </a>
                 </div>
