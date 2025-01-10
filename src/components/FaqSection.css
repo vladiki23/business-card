@@ -1,0 +1,26 @@
+.accordion-button {
+    color: white; /* Белый текст */
+    box-shadow: none !important; /* Убираем тени */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: rgba(41, 39, 39, 0.13); /* Темнее при наведении */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #191b1e; /* Темный цвет, когда раскрыто */
+}
+
+.accordion-body {
+    background-color: #222729; /* Цвет шапки */
+    color: white; /* Белый текст */
+    border: none; /* Убираем обводку */
+    padding: 1rem 1.25rem; /* Добавляем отступы для текста */
+}
+
+.accordion-item {
+    border: none; /* Убираем обводку вокруг каждого элемента */
+}
+
+

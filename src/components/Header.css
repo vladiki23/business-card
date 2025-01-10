@@ -1,0 +1,99 @@
+.header {
+    position: relative; /* Корректное позиционирование */
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar {
+    background: rgba(108, 108, 108, 0.8); /* Темный фон для лучшей читаемости */
+    transition: background 0.3s ease-in-out; /* Плавный переход для изменения фона */
+    padding: 5px 20px; /* Добавляем немного внутреннего пространства */
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase; /* Заглавные буквы */
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+    color: white !important; /* Белый текст */
+    padding: 0.5rem 1rem; /* Увеличенные отступы для удобства */
+    transition: color 0.3s ease; /* Плавный переход для цвета при наведении */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #383a42 !important; /* Цвет при наведении */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color: #45464c !important; /* Синий цвет при наведении */
+}
+
+/* Стили для контактной формы */
+.contact-form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #495057;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.contact-form textarea {
+    resize: none; /* Убираем возможность изменения размера текстового поля */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Добавляем плавный переход */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Более тёмный синий при наведении */
+}
+
+/* Модальное окно */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Тёмный фон */
+}
+
+.modal-dialog {
+    max-width: 500px; /* Максимальная ширина модального окна */
+    margin: 10% auto; /* Центрирование */
+}
+
+.modal-content {
+    border-radius: 10px; /* Скруглённые углы */
+}
+
+.modal-header {
+    border-bottom: none; /* Убираем линию разделения */
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+}
+
+.form-label {
+    font-weight: bold; /* Жирный текст для меток */
+    color: #495057; /* Темно-серый цвет */
+}
+
+
+
+
+

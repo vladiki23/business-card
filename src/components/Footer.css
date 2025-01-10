@@ -1,0 +1,24 @@
+footer {
+    background-color: #343a40; /* Цвет фона */
+    color: white; /* Цвет текста */
+    text-align: center;
+    padding: 20px 0; /* Отступы внутри футера */
+}
+
+.footer-copyright {
+    font-size: 0.9rem; /* Размер текста для копирайта */
+}
+
+.footer-contact {
+    text-align: right; /* Выравнивание текста справа */
+}
+
+.footer-contact h5 {
+    font-size: 1rem; /* Увеличенный заголовок */
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 0; /* Убираем отступы между строками */
+    font-size: 0.9rem; /* Уменьшаем текст */
+}

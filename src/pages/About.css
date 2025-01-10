@@ -1,0 +1,60 @@
+.about-container {
+    background-color: #f8f9fa; /* Светло-серый фон */
+    padding: 50px 0; /* Отступы сверху и снизу */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center;
+}
+
+.about-content {
+    max-width: 600px; /* Ограничиваем ширину контейнера */
+    padding: 20px;
+    background-color: #ffffff; /* Белый фон для контента */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Добавляем лёгкую тень */
+    text-align: center; /* Выравнивание текста */
+}
+
+.about-image {
+    width: 147px;
+    height: 147px;
+    border-radius: 50%; /* Круглая картинка */
+    object-fit: cover; /* Избегаем искажений картинки */
+    border: 0px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d; /* Цвет текста */
+    margin-bottom: 20px; /* Отступ между абзацами */
+}
+
+.about-description a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-description a:hover {
+    text-decoration: underline;
+}
+
+.about-social-links {
+    margin-top: 20px;
+}
+
+.about-social-links a {
+    font-size: 1.5rem; /* Размер иконок */
+    color: #6c757d; /* Цвет иконок */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.about-social-links a:hover {
+    color: #007bff;
+}
+
+
+
+

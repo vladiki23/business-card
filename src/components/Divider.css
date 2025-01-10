@@ -1,0 +1,7 @@
+.divider {
+    width: 80%; /* Ширина линии */
+    height: 2px; /* Толщина линии */
+    background-color: #0c0f13; /* Светло-серый цвет */
+    margin: 40px auto; /* Отступы сверху и снизу */
+    border-radius: 1px; /* Скругленные края */
+}

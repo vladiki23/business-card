@@ -1,0 +1,38 @@
+/* Контейнер с видео на фоне */
+.hero-container {
+    position: relative;
+    height: 100vh; /* Полная высота окна */
+    width: 100%; /* Полная ширина */
+    overflow: hidden; /* Чтобы видео не выходило за пределы контейнера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Видео */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видео заполняет контейнер, не теряя пропорции */
+    z-index: -1; /* Отправляем видео на задний план */
+}
+
+/* Флаги */
+.flag-image {
+    width: 80px; /* Ширина каждого изображения */
+    height: 60px; /* Сохраняем пропорции */
+    margin: 5px; /* Убираем внешние отступы */
+}
+
+.no-gutters {
+    display: flex; /* Рядом друг с другом */
+    gap: 0; /* Убираем промежутки между изображениями */
+}
+
+.flag-image + .flag-image {
+    margin-left: -1px; /* Убираем зазоры между флагами */
+}
+

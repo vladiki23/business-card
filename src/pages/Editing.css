@@ -1,0 +1,54 @@
+.editing-container {
+    background-color: #f8f9fa; /* Светло-серый фон всей страницы */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Контент на сером фоне */
+.editing-content {
+    background-color: #e9ecef; /* Серый фон для текста */
+    padding: 30px;
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Изображение */
+.editing-image {
+    width: 100%; /* Полная ширина блока */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Стиль для текста */
+.editing-content p {
+    font-size: 1.1rem; /* Увеличиваем шрифт */
+    color: #495057; /* Тёмно-серый текст */
+    line-height: 1.8; /* Пространство между строками */
+    margin-bottom: 15px;
+}
+
+.editing-content .highlight {
+    font-weight: bold; /* Выделяем текст */
+    color: #007bff; /* Синий цвет для акцентов */
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Для адаптивности */
+@media (max-width: 768px) {
+    .editing-content {
+        padding: 20px; /* Уменьшаем отступы для мобильных */
+    }
+
+    h1 {
+        font-size: 2rem; /* Уменьшаем шрифт заголовка */
+    }
+}
+
+

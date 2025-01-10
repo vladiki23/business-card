@@ -1,0 +1,105 @@
+.drone-services-container {
+    background-color: #f8f9fa; /* Светло-серый фон */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-title {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tabs-container {
+    background-color: #e9ecef; /* Серый фон для вкладок */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background: #007bff;
+    color: white;
+}
+
+.tab:hover {
+    background: #0056b3;
+    color: white;
+}
+
+.close-tab {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.close-tab:hover {
+    color: #ff0000;
+}
+
+.tab-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-image {
+    width: 70%;
+    border-radius: 8px;
+}
+
+.details-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+
+
+
+
+
+
+

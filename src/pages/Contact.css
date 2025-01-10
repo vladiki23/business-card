@@ -1,0 +1,26 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 10% auto;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
