@@ -1,6 +1,7 @@
 html, body {
-  height: 100%; /* Устанавливаем полную высоту для HTML и Body */
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .app-wrapper {

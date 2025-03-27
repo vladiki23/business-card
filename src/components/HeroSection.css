@@ -1,45 +1,35 @@
 .hero-container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    z-index: -1;
     overflow: hidden;
 }
 
 .hero-video {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
     object-fit: cover;
 }
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
 
-.hero-content .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    text-decoration: none;
-}
 
-.hero-content .btn:hover {
-    background-color: #0056b3;
-}
 
