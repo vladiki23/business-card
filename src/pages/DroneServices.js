@@ -171,9 +171,9 @@ const DroneServices = () => {
                     </div>
                 )}
 
-                <div className="row">
+                <div className="row d-flex justify-content-center">
                     {services.map((service) => (
-                        <div key={service.id} className="col-md-4 mb-4">
+                        <div key={service.id} className="col-md-5 mb-4">
                             <div className="service-card" onClick={() => openTab(service)}>
                                 <img src={service.image} alt={service.title} className="img-fluid service-image" />
                                 <h3 className="service-title">{service.title}</h3>
