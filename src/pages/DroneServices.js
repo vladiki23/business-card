@@ -16,7 +16,7 @@ const DroneServices = () => {
 
         I use a DJI Mavic 3 Pro Cine, which supports Apple ProRes 422 HQ, Apple ProRes 422, and Apple ProRes 422 LT. Apple ProRes is an industry standard high-quality video codec.
       `,
-            image: '/path-to-images/drone-filming.png',
+            image: '/path-to-images/drone-filming.jpg',
         },
         {
             id: 2,
@@ -24,7 +24,7 @@ const DroneServices = () => {
             content: `
         In today’s fast-paced, visually driven world, drones have revolutionised how businesses operate, market, and grow. From stunning aerial photography to streamlining complex operations, drones bring unparalleled efficiency, creativity, and insight to commercials.
       `,
-            image: '/path-to-images/commercial-drone.png',
+            image: '/path-to-images/commercial-drone.jpg',
         },
         {
             id: 3,
@@ -37,7 +37,7 @@ const DroneServices = () => {
         - High-Resolution Imagery
         - Reduced Labor Costs
       `,
-            image: '/path-to-images/drone-survey.png',
+            image: '/path-to-images/drone-survey.jpeg',
         },
         { id: 4, title: 'Real Estate Drone Photography', content: 'Enhanced Property Marketing \n' +
                 'Drones have become an invaluable tool in the real estate industry, revolutionizing the way properties are marketed, evaluated, and managed. From capturing stunning aerial imagery to providing detailed property assessments, drones offer several benefits for real estate professionals\n' +
@@ -45,7 +45,7 @@ const DroneServices = () => {
                 'High-Quality Visuals: Drones provide breathtaking aerial footage and high-resolution images, which can showcase a property from unique angles and perspectives that traditional photography can\'t match. This is especially beneficial for large estates, commercial properties, or developments with expansive outdoor areas.\n' +
                 'Visual Appeal: Aerial shots highlight the property\'s location, surrounding areas, and landscaping, helping potential buyers see the full context and value of the property. It can also show proximity to landmarks, parks, schools, or key amenities.\n' +
                 'Virtual Tours: Drones can be used to create interactive virtual tours, giving potential buyers or tenants an immersive experience of the property. This can be particularly valuable for remote buyers or those unable to visit the property in person.\n' +
-                'Live streaming: Offers real estate professionals a dynamic way to showcase properties from unique aerial perspectives. It enhances listings with high-quality, real-time video, allowing potential buyers to experience the property remotely and gain a comprehensive view of the surrounding area.', image: '/path-to-images/real-estate-drone.png' },
+                'Live streaming: Offers real estate professionals a dynamic way to showcase properties from unique aerial perspectives. It enhances listings with high-quality, real-time video, allowing potential buyers to experience the property remotely and gain a comprehensive view of the surrounding area.', image: '/path-to-images/real-estate-drone.jpg' },
     ];
 
     const [openTabs, setOpenTabs] = useState([]);
