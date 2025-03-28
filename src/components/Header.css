@@ -86,7 +86,9 @@
     background-color: rgb(22 27 33 / 53%) !important;
 }
 
-
+.icon {
+    vertical-align: -3px; /* Для поднятия иконки (попробуй -3px, чтобы поднять на 1 см) */
+}
 
 
 

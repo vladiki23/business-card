@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { TbDrone } from "react-icons/tb"; // Используем иконку самолета (или другую подходящую)
 import Contact from '../pages/Contact';
 
 const Header = () => {
@@ -27,7 +28,8 @@ const Header = () => {
         <header className="header">
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container">
-                    <Link className="navbar-brand logo-text" to="/" onClick={handleNavLinkClick}>
+                    <Link className="navbar-brand logo-text"  to="/" onClick={handleNavLinkClick}>
+                        <TbDrone style={{ marginRight: '8px', fontSize: '1.2rem', verticalAlign: '-2px'}} /> {/* Иконка рядом с текстом */}
                         DRONE-PILOT.CO.UK
                     </Link>
                     <button
@@ -71,7 +73,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <button
-                                    className="nav-link btn btn-link text-warning"
+                                    className="nav-link btn btn-link text-info"
                                     onClick={() => {
                                         handleOpenModal();
                                         handleNavLinkClick();
@@ -90,6 +92,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 
 
