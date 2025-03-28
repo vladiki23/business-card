@@ -1,24 +1,51 @@
 footer {
     background-color: #343a40; /* Цвет фона */
     color: white; /* Цвет текста */
-    text-align: center;
     padding: 20px 0; /* Отступы внутри футера */
+    font-size: 0.85rem; /* Уменьшаем размер текста */
 }
 
 .footer-copyright {
-    font-size: 0.9rem; /* Размер текста для копирайта */
+    font-size: 0.8rem; /* Размер текста для копирайта */
 }
 
 .footer-contact {
-    text-align: right; /* Выравнивание текста справа */
+    text-align: center; /* Центрируем текст на мобильных */
 }
 
 .footer-contact h5 {
-    font-size: 1rem; /* Увеличенный заголовок */
+    font-size: 1.2rem; /* Заголовок */
     margin-bottom: 10px;
 }
 
 .footer-contact p {
     margin: 0; /* Убираем отступы между строками */
-    font-size: 0.9rem; /* Уменьшаем текст */
+    font-size: 1rem; /* Размер текста для контактных данных */
 }
+
+.footer-icons p {
+    font-size: 0.9rem; /* Уменьшаем шрифт для мобильных */
+}
+
+.footer-icons svg {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+@media (max-width: 576px) {
+    footer {
+        font-size: 0.75rem; /* Меньший текст на мобильных */
+    }
+
+    .footer-contact {
+        text-align: center; /* Выравниваем по центру */
+    }
+
+    .footer-contact h5 {
+        font-size: 1rem; /* Меньший размер заголовка на мобильных */
+    }
+
+    .footer-icons p {
+        font-size: 0.8rem; /* Ещё меньше текст на мобильных */
+    }
+}
+

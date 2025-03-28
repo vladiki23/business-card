@@ -41,10 +41,6 @@
 }
 
 /* Анимация для мобильного меню */
-.navbar-toggler-icon {
-    background-color: #00bcd4; /* Голубая иконка меню */
-}
-
 .navbar-collapse {
     transition: transform 0.3s ease;
 }
@@ -59,13 +55,31 @@
     color: #00bcd4;
     text-transform: uppercase;
     font-weight: normal;
+    background: none; /* Убираем фон */
+    border: none; /* Убираем обводку */
+    text-decoration: none; /* Убираем подчеркивание */
 }
 
 .nav-link.btn-link.text-info:hover {
     color: #008c92; /* Голубой цвет при наведении */
-    text-decoration: underline;
+    text-decoration: underline; /* Подчеркнутый текст */
 }
 
+.nav-link.btn-link.text-info:focus {
+    outline: none; /* Убираем фокусный контур */
+}
+
+/* Убираем обводку вокруг кнопки бургер-меню */
+.navbar-toggler:focus {
+    outline: none; /* Убираем стандартный контур */
+    box-shadow: none; /* Убираем тень */
+    border: none;
+}
+
+.navbar-toggler {
+    --bs-border-width: 0; /* Устанавливаем ширину границы в 0 */
+    border: none; /* Убираем все границы */
+}
 
 
 
