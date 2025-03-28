@@ -11,13 +11,15 @@ const HeroSection = () => {
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
-                />
+                    className="hero-video"
+                ></iframe>
             </div>
         </div>
     );
 };
 
 export default HeroSection;
+
 
 
 
