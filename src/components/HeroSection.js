@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div className="hero-container">
             <div className="video-container">
                 <iframe
-                    src="https://player.vimeo.com/video/1070058633?h=8fdb35769f&autoplay=1&loop=1&muted=1&background=1"
+                    src="https://player.vimeo.com/video/1070089100?h=eb61da3cbc&autoplay=1&loop=1&background=1"
                     title="vimeo-background"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
