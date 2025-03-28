@@ -28,6 +28,34 @@
     object-fit: cover;
 }
 
+/* 📱 Адаптация под телефоны */
+@media (max-width: 768px) {
+    .hero-container {
+        height: 100vh;
+    }
+
+    .video-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-bottom: 0;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: none;
+        object-fit: cover;
+    }
+}
+
+
+
 
 
 
