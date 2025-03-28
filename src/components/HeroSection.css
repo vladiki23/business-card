@@ -2,57 +2,46 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
-.video-wrapper {
+.video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    z-index: -1;
+    height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
-.hero-video {
+.video-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    width: 160%;
+    height: 160%;
+    transform: translate(-50%, -50%);
     border: none;
-    object-fit: cover;
+    pointer-events: none;
 }
 
-/* 📱 Адаптация под телефоны */
-@media (max-width: 768px) {
-    .hero-container {
-        height: 100vh;
-    }
-
-    .video-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        padding-bottom: 0;
-    }
-
+@media (max-width: 1024px) {
     .hero-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        transform: none;
-        object-fit: cover;
+        width: 300vw;
+        height: 300vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
+
+
+
+
+
+
+
 
 
 
