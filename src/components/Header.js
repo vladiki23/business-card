@@ -28,7 +28,7 @@ const Header = () => {
         <header className="header">
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container">
-                    <Link className="navbar-brand logo-text"  to="/" onClick={handleNavLinkClick}>
+                    <Link className="navbar-brand logo-text "  to="/" onClick={handleNavLinkClick}>
                         <TbDrone style={{ marginRight: '8px', fontSize: '1.2rem', verticalAlign: '-2px'}} /> {/* Иконка рядом с текстом */}
                         DRONE-PILOT.CO.UK
                     </Link>
@@ -64,11 +64,6 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>
                                     About
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/faq" onClick={handleNavLinkClick}>
-                                    FAQ
                                 </Link>
                             </li>
                             <li className="nav-item">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';  // Импортируем иконки
 import './InfoSection.css';
 
 const InfoSection = () => {
@@ -8,7 +9,9 @@ const InfoSection = () => {
             <div className="text-center mb-5">
                 <h2>Fully CAA Licensed and Commercially Insured Pilot</h2>
                 <p>Based in London. Licensed in the UK and EU.</p>
-                <div className="d-flex justify-content-center mb-3 no-gutters">
+
+                {/* Контейнер с флагами и логотипами */}
+                <div className="flag-container mb-4">
                     <img
                         src="/path-to-images/uk-flag.png"
                         alt="UK Flag"
@@ -26,13 +29,18 @@ const InfoSection = () => {
                     />
                     <img
                         src="/path-to-images/images.jpg"
-                        alt="UK Flag"
+                        alt="EASA Logo"
                         className="flag-image"
                     />
                 </div>
+
+                {/* Контактная информация */}
                 <p>
-                    <strong>WhatsApp:</strong> +4474 939 12 469<br/>
-                    <strong>Email:</strong> pro.dronepilot.uk@gmail.com
+                    <strong>Contact Me:</strong>
+                    <br/>
+                    <FaWhatsapp /> WhatsApp: +4474 939 12 469
+                    <br />
+                    <FaEnvelope /> Email: pro.dronepilot.uk@gmail.com
                 </p>
             </div>
         </div>
@@ -40,6 +48,5 @@ const InfoSection = () => {
 };
 
 export default InfoSection;
-
 
 

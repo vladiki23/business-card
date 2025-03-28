@@ -6,7 +6,6 @@
 
 .service-card {
     background: white;
-    border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
     padding: 20px;
@@ -20,14 +19,14 @@
 }
 
 .service-image {
-    width: 70%;
+    width: 90%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .service-title {
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
