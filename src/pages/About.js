@@ -28,13 +28,7 @@ const About = () => {
 
                 {/* Социальные иконки */}
                 <div className="about-social-links">
-                    <a href="/about" className="me-3">
-                        <i className="bi bi-linkedin"></i>
-                    </a>
-                    <a href="/about" className="me-3">
-                        <i className="bi bi-vimeo"></i>
-                    </a>
-                    <a href="/about">
+                    <a href="https://www.instagram.com/dronefromlife?igsh=MTd0MncxM3RuOTlnMA%3D%3D&utm_source=qr">
                         <i className="bi bi-instagram"></i>
                     </a>
                 </div>
