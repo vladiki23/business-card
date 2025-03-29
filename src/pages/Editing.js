@@ -22,7 +22,7 @@ const Editing = () => {
                             allowFullScreen
                         ></iframe>
                         <iframe
-                            src="https://player.vimeo.com/video/1070441544?h=139ac1cb11"
+                            src="https://player.vimeo.com/video/1070439941?h=2f39629368"
                             title="Editing Video 2"
                             allow="autoplay; fullscreen; picture-in-picture"
                             allowFullScreen

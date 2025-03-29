@@ -81,6 +81,7 @@
 .navbar-toggler {
     --bs-border-width: 0; /* Устанавливаем ширину границы в 0 */
     border: none; /* Убираем все границы */
+    box-shadow: none;
 }
 
 .bg-dark {
