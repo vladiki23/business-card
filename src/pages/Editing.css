@@ -12,7 +12,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
 }
 
-
 /* Стиль для текста */
 .editing-content p {
     font-size: 1.1rem; /* Увеличиваем шрифт */
@@ -24,6 +23,57 @@
 .editing-content .highlight {
     font-weight: bold; /* Выделяем текст */
     color: #007bff; /* Синий цвет для акцентов */
+}
+
+/* Стили для видео в карусели */
+.carousel-inner iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видео будет заполнять весь экран с сохранением пропорций */
+}
+
+/* Стили для контейнера карусели */
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Центрируем карусель по горизонтали */
+}
+
+/* Стили для карусели и видео */
+.carousel-item {
+    display: flex;
+    justify-content: center; /* Центрируем видео в карусели */
+}
+
+.editing-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    max-width: 800px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем на экране */
+}
+
+.editing-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Стили для кнопок управления каруселью */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%); /* Центрируем стрелки по вертикали */
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон для стрелок */
+    color: white; /* Белый цвет стрелок */
+    border: none; /* Без обводки */
+    padding: 15px;
+    border-radius: 50%; /* Круглая форма */
 }
 
 /* Заголовок */
@@ -42,22 +92,17 @@ h1 {
     h1 {
         font-size: 2rem; /* Уменьшаем шрифт заголовка */
     }
+
+    .editing-video-wrapper {
+        max-width: 100%; /* Для мобильных устройств расширяем на всю ширину */
+    }
 }
 
-.editing-video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
+@media (max-width: 480px) {
+    .editing-video-wrapper {
+        max-width: 100%; /* Расширяем для маленьких экранов */
+        padding-bottom: 75%; /* Увеличиваем высоту на маленьких экранах */
+    }
 }
 
-.editing-video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
 

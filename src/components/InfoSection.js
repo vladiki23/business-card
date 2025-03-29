@@ -23,12 +23,12 @@ const InfoSection = () => {
                         className="flag-image"
                     />
                     <img
-                        src="/path-to-images/easa-logo.png"
+                        src="/path-to-images/easa-logo.jpg"
                         alt="EASA Logo"
                         className="flag-image"
                     />
                     <img
-                        src="/path-to-images/images.jpg"
+                        src="/path-to-images/images.webp"
                         alt="EASA Logo"
                         className="flag-image"
                     />
