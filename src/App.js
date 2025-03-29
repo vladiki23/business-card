@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion'; // Импортируем Framer Motion для анимаций
 import Header from './components/Header';
@@ -28,6 +28,11 @@ function App() {
 function PageTransitions() {
     const location = useLocation(); // Используем useLocation для отслеживания текущего маршрута
 
+    // Прокрутка страницы в начало при изменении пути
+    useEffect(() => {
+        window.scrollTo(0, 0); // Прокрутить страницу в начало
+    }, [location]); // Срабатывает при изменении пути
+
     return (
         <motion.div
             key={location.pathname}
@@ -39,7 +44,6 @@ function PageTransitions() {
             <Routes location={location}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/faq" element={<FAQ />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/drone-services" element={<DroneServices />} />
                 <Route path="/editing" element={<Editing />} />
@@ -49,6 +53,8 @@ function PageTransitions() {
 }
 
 export default App;
+
+
 
 
 

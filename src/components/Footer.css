@@ -20,7 +20,7 @@ footer {
 
 .footer-contact p {
     margin: 0; /* Убираем отступы между строками */
-    font-size: 1rem; /* Размер текста для контактных данных */
+    font-size: 0.5rem; /* Размер текста для контактных данных */
 }
 
 .footer-icons p {

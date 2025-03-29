@@ -3,6 +3,7 @@ html, body {
   height: 100%; /* Полная высота окна */
   margin: 0; /* Убираем внешние отступы */
   padding: 0; /* Убираем внутренние отступы */
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Главная обертка для приложения */
