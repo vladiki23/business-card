@@ -8,11 +8,13 @@
     background-color: rgba(0, 0, 0, 0.4); /* Прозрачный темный фон */
     padding: 8px 20px;
     transition: background-color 0.3s ease;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #666;
 }
 
 .navbar-nav .nav-link {
     text-transform: uppercase;
-    font-size: 0.95rem; /* Уменьшаем размер текста */
+    font-size: 0.90rem; /* Уменьшаем размер текста */
     color: #f8f9fa; /* Белый текст */
     padding: 0.5rem 1rem; /* Уменьшаем отступы */
     transition: color 0.3s ease, transform 0.3s ease;
@@ -20,7 +22,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #00bcd4; /* Голубой цвет при наведении */
+    color: #27c6b8; /* Голубой цвет при наведении */
     transform: scale(1.05); /* Легкое увеличение текста */
 }
 
@@ -52,7 +54,7 @@
 /* Кнопка Contact */
 .nav-link.btn-link.text-info {
     font-size: 1rem; /* Уменьшаем размер кнопки */
-    color: #00bcd4;
+    color: #046771;
     text-transform: uppercase;
     font-weight: normal;
     background: none; /* Убираем фон */
@@ -61,7 +63,7 @@
 }
 
 .nav-link.btn-link.text-info:hover {
-    color: #008c92; /* Голубой цвет при наведении */
+    color: #01474a; /* Голубой цвет при наведении */
     text-decoration: underline; /* Подчеркнутый текст */
 }
 

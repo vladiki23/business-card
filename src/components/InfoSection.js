@@ -4,7 +4,7 @@ import './InfoSection.css';
 
 const InfoSection = () => {
     return (
-        <div className="container my-5">
+        <div className="flag-container my-5">
             {/* Лицензия и контактная информация */}
             <div className="text-center mb-5">
                 <h2>Fully CAA Licensed and Commercially Insured Pilot</h2>

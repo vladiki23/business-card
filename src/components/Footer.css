@@ -1,6 +1,6 @@
 footer {
     background-color: #343a40; /* Цвет фона */
-    color: white; /* Цвет текста */
+    color: #ffffff !important; /* Цвет текста */
     padding: 20px 0; /* Отступы внутри футера */
     font-size: 0.85rem; /* Уменьшаем размер текста */
 }
