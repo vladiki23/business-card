@@ -175,7 +175,14 @@ const DroneServices = () => {
                     {services.map((service) => (
                         <div key={service.id} className="col-md-5 mb-4">
                             <div className="service-card" onClick={() => openTab(service)}>
-                                <img src={service.image} alt={service.title} className="img-fluid service-image" />
+                                <img
+                                    srcSet={`${service.image}?w=500 500w, ${service.image}?w=800 800w`}
+                                    sizes="(max-width: 576px) 100vw, 50vw" // Устанавливаем размеры, чтобы на мобильных устройствах изображение заполняло 100% ширины, а на десктопе — 50%
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="img-fluid service-image"
+                                    style={{width: "100%", height: "auto"}}
+                                />
                                 <h3 className="service-title">{service.title}</h3>
                             </div>
                         </div>

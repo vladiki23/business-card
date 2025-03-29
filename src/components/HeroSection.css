@@ -1,20 +1,22 @@
 .hero-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; /* Занимает весь экран */
+    width: 100%; /* Ширина 100% */
+    overflow: hidden; /* Скрыть части видео, выходящие за пределы */
+    margin: 0;
+    padding: 0;
 }
 
 .video-container {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
+/* Стиль для iframe, чтобы оно заполнило весь экран */
 .video-container iframe {
     position: absolute;
     top: 50%;
@@ -26,16 +28,39 @@
     pointer-events: none;
 }
 
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        height: 100vh; /* Видео заполняет экран на мобильных */
+    }
 
-@media (max-width: 1024px) {
-    .hero-video {
-        width: 300vw;
-        height: 300vh;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .video-container iframe {
+        height: 100%; /* Видео будет занимать всю высоту экрана */
     }
 }
+
+@media (max-width: 480px) {
+    .video-container {
+        height: 80vh; /* Немного уменьшаем высоту для маленьких экранов */
+    }
+
+    .video-container iframe {
+        height: 100%; /* Видео будет занимать всю высоту */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
