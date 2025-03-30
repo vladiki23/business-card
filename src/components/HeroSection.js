@@ -2,20 +2,24 @@ import React, { useState } from 'react';
 import './HeroSection.css';
 
 const HeroSection = () => {
-    const [isLoading, setIsLoading] = useState(true); // Стейт для отслеживания загрузки
+    const [isLoading, setIsLoading] = useState(true);
 
-    // Обработчик для события начала воспроизведения видео
     const handleVideoLoaded = () => {
-        setIsLoading(false); // Видео готово к воспроизведению, меняем состояние
+        setIsLoading(false);
     };
 
     return (
         <div className="hero-container">
             <div className="video-container">
-                {/* Показываем индикатор загрузки, пока видео не загрузится */}
+                {/* Индикатор загрузки */}
                 {isLoading && (
                     <div className="loading-overlay">
-                        <span>Loading...</span>
+                        <div className="loading-bars">
+                            <div className="loading-bar"></div>
+                            <div className="loading-bar"></div>
+                            <div className="loading-bar"></div>
+                            <div className="loading-bar"></div>
+                        </div>
                     </div>
                 )}
                 <iframe
@@ -25,7 +29,7 @@ const HeroSection = () => {
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
                     className="hero-video"
-                    onCanPlayThrough={handleVideoLoaded} // Событие для видео, когда оно готово к воспроизведению
+                    onLoad={handleVideoLoaded} // Событие срабатывает, когда видео загружено
                 />
             </div>
         </div>
@@ -33,6 +37,8 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
 
 
 

@@ -37,10 +37,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
-    color: white;
-    font-size: 2rem;
-    z-index: 10; /* Индекс, чтобы индикатор был поверх видео */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.loading-bars {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 20px;
+}
+
+.loading-bar {
+    width: 6px;
+    height: 100%;
+    background-color: #000000;
+    animation: barAnimation 1.2s infinite ease-in-out;
+}
+
+@keyframes barAnimation {
+    0%, 100% {
+        transform: scaleY(1); /* Начинаем с нормального размера */
+    }
+    50% {
+        transform: scaleY(0.3); /* Сжимаем полоску в 3 раза */
+    }
 }
 
 /* Адаптивность для мобильных устройств */
