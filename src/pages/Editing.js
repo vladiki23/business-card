@@ -31,36 +31,50 @@ const Editing = () => {
 
                     {/* Блок с текстом */}
                     <div className="editing-text-wrapper">
-                        <p>
-                            <span className="highlight">Colour grading</span> is one of the most important processes
-                            in creating a memorable image. Whether you're aiming for a warm, nostalgic feel or a
-                            cold, dramatic look, color grading elevates the visual storytelling and ensures the
-                            final product matches the creative vision—it is what makes videos shine.
+                        <p className="highlighted-title">
+                            Bringing Your Story to Life with Colour, Sound & Emotion
                         </p>
                         <p>
-                            I can <span className="highlight">highlight the sky, the grass, your product, or your wedding dress</span>.
-                            I use specialized tools to subtly focus the audience's attention at any point in the
-                            frame.
+                            Editing is where the magic happens—it’s the process that transforms raw footage into a
+                            compelling story. Every cut, transition, and frame shapes the narrative, creates rhythm, and
+                            keeps the audience engaged.
                         </p>
                         <p>
-                            Colour grading not only brings everything together to make it seem consistent and
-                            visually appealing, but it also gives it an exhilarating boost towards the high end.
+                            Great editing isn’t just about seamless cuts; it’s about storytelling. I craft each moment
+                            with precision, ensuring the pacing flows naturally, emotions land at the right time, and
+                            every shot serves a purpose.
                         </p>
                         <p>
-                            I have over 10 years of video editing and colour grading experience, cutting music
+                            Colour grading enhances this by setting the tone—whether it’s a warm, nostalgic glow or a
+                            bold, cinematic look, it brings cohesion and depth to every frame. Meanwhile, sound design
+                            ties everything together, refining dialogue, balancing music, and adding the subtle details
+                            that make any project feel truly immersive.
+                        </p>
+                        <p>
+                            With a sharp eye for detail and a passion for storytelling, I bring footage to life—turning
+                            ideas into powerful, polished visuals that leave a lasting impact.
+                        </p>
+                        <p className="highlighted-title">
+                            Experience & Workflow
+                        </p>
+                        <p>
+                            With over 10 years of experience in video editing and colour grading, I’ve worked on music
                             videos, documentary projects, and TV commercials.
                         </p>
                         <p>
-                            As I work remotely, you will just need to upload high-res footage and transfer it to me.
-                            I'll create a stress-free workflow that works for you—keeping your project on time and
-                            on budget.
+                            I work remotely, making the process seamless—simply upload your high-res footage, and I’ll
+                            handle the rest. My efficient workflow ensures your project stays on time and within budget.
                         </p>
                         <p>
-                            I am <span className="highlight">flexible and customer-focused</span>, so don't hesitate
-                            to drop me a message to discuss projects of any scale. I'll give you an immediate quote
-                            and a breakdown of the workflow.
+                            I’m <span className="highlight">flexible and customer-focused</span>, so feel free to reach
+                            out to discuss projects of any scale. I’ll provide an immediate quote and a clear breakdown
+                            of the workflow.
+                        </p>
+                        <p>
+                            More references by request.
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>

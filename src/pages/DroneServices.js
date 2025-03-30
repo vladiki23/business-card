@@ -100,7 +100,7 @@ const DroneServices = () => {
                     allowing potential buyers to experience the property remotely and gain a comprehensive view of the
                     surrounding area.</p>
             </div>,
-            image: '/path-to-images/real-estate-drone.jpg'
+            image: '/path-to-images/real-estate-drone.png'
         },
     ];
 
