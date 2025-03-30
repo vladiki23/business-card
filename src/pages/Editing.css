@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
 .editing-container {
     background-color: #f8f9fa; /* Светло-серый фон всей страницы */
     min-height: 100vh;
@@ -30,11 +32,9 @@
     border: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
-
-
 /* Стили для заголовков */
 .highlighted-title {
+
     font-family: 'Roboto', sans-serif; /* Используем Roboto */
     font-size: 1.8rem; /* Размер шрифта */
     font-weight: 300; /* Тонкий шрифт */
