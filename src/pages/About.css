@@ -1,59 +1,88 @@
+/* Импортируем шрифт Orbitron из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
 .about-container {
     background-color: #f8f9fa; /* Светло-серый фон */
     padding: 50px 0; /* Отступы сверху и снизу */
     display: flex;
-    justify-content: center; /* Центрируем содержимое */
-    align-items: center;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
 }
 
 .about-content {
-    max-width: 600px; /* Ограничиваем ширину контейнера */
+    display: flex;
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    max-width: 1200px; /* Ограничиваем максимальную ширину контейнера */
+    width: 100%;
     padding: 20px;
     background-color: #ffffff; /* Белый фон для контента */
     border-radius: 10px; /* Скругленные углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Добавляем лёгкую тень */
-    text-align: center; /* Выравнивание текста */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-top: 30px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image-wrapper {
+    flex-shrink: 0;
 }
 
 .about-image {
-    width: 147px;
-    height: 147px;
-    border-radius: 50%; /* Круглая картинка */
+    width: 200px;
+    height: 200px;
     object-fit: cover; /* Избегаем искажений картинки */
-    border: 0px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff; /* Белая рамка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
-.about-description p {
+.about-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
-    line-height: 1.6;
-    color: #6c757d; /* Цвет текста */
-    margin-bottom: 20px; /* Отступ между абзацами */
+    line-height: 1.7;
+    color: #495057; /* Тёмно-серый текст */
+    margin-bottom: 15px;
 }
 
-.about-description a {
-    color: #007bff;
-    text-decoration: none;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image-wrapper {
+        margin-top: 20px;
+    }
+
+    .about-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
 }
 
-.about-description a:hover {
-    text-decoration: underline;
-}
 
-.about-social-links {
-    margin-top: 20px;
-}
 
-.about-social-links a {
-    font-size: 1.5rem; /* Размер иконок */
-    color: #6c757d; /* Цвет иконок */
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
 
-.about-social-links a:hover {
-    color: #007bff;
-}
+
 
 
 

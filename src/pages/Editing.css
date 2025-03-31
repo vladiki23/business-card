@@ -34,10 +34,9 @@
 
 /* Стили для заголовков */
 .highlighted-title {
-
     font-family: 'Roboto', sans-serif; /* Используем Roboto */
     font-size: 1.8rem; /* Размер шрифта */
-    font-weight: 300; /* Тонкий шрифт */
+    font-weight: 500; /* Тонкий шрифт */
     color: #007bff; /* Синий цвет */
     margin-bottom: 20px; /* Отступ снизу */
 

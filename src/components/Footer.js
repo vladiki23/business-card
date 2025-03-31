@@ -14,8 +14,11 @@ const Footer = () => {
                 <div className="footer-contact text-center text-md-end">
                     <h5>Contact Me</h5>
                     <div className="footer-icons mb-2 footer">
-                        <p className="mb-1">
-                            <FaEnvelope /> <span>pro.dronepilot.uk@gmail.com</span>
+                        <p className="mb-2">
+                            <FaEnvelope />
+                            <a href="mailto:pro.dronepilot.uk@gmail.com">
+                                <span>  pro.dronepilot.uk@gmail.com</span>
+                            </a>
                         </p>
                         <p>
                             <FaWhatsapp /> <span>+4474 939 12 469</span>
@@ -28,6 +31,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

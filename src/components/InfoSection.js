@@ -38,9 +38,11 @@ const InfoSection = () => {
                 <p>
                     <strong>Contact Me:</strong>
                     <br/>
-                    <FaWhatsapp /> WhatsApp: +4474 939 12 469
-                    <br />
-                    <FaEnvelope /> Email: pro.dronepilot.uk@gmail.com
+                    <FaWhatsapp/> WhatsApp: +4474 939 12 469
+                    <br/>
+                    <FaEnvelope/> <a href="mailto:pro.dronepilot.uk@gmail.com">
+                    <span>  pro.dronepilot.uk@gmail.com</span>
+                </a>
                 </p>
             </div>
         </div>

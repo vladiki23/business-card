@@ -5,7 +5,7 @@ const Editing = () => {
     return (
         <div className="editing-container">
             <div className="container py-5">
-                <h1 className="text-center mb-5">Editing Services</h1>
+                <h1 className="text-center mt-3">Editing Services</h1>
                 <div className="editing-content">
                     {/* Блок с видео */}
                     <div className="editing-video-wrapper">
