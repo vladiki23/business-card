@@ -5,10 +5,10 @@ import './HeroSection.css';
 const HeroSection = () => {
     const iframeRef = useRef(null);
     const [player, setPlayer] = useState(null);
-    const [soundOn, setSoundOn] = useState(false);
+    const [muted, setMuted] = useState(true);
 
     useEffect(() => {
-        if (iframeRef.current && !player) {
+        if (iframeRef.current) {
             const vimeoPlayer = new Player(iframeRef.current, {
                 id: 1070058633,
                 autoplay: true,
@@ -17,15 +17,23 @@ const HeroSection = () => {
                 background: true,
             });
 
-            setPlayer(vimeoPlayer);
+            vimeoPlayer.ready().then(() => {
+                setPlayer(vimeoPlayer);
+                setMuted(true); // устанавливаем в true для корректного старта
+            });
         }
-    }, [player]);
+    }, []);
 
-    const enableSound = async () => {
-        if (player) {
+    const toggleMute = async () => {
+        if (!player) return;
+
+        const isMuted = await player.getMuted();
+        if (isMuted) {
             await player.setMuted(false);
-            await player.play();
-            setSoundOn(true);
+            setMuted(false);
+        } else {
+            await player.setMuted(true);
+            setMuted(true);
         }
     };
 
@@ -41,17 +49,17 @@ const HeroSection = () => {
                     title="Vimeo Video"
                 ></iframe>
 
-                {!soundOn && (
-                    <button className="sound-button" onClick={enableSound}>
-                        🔊 Включить звук
-                    </button>
-                )}
+                <button className="sound-button" onClick={toggleMute}>
+                    {muted ? 'Unmute' : 'Mute'}
+                </button>
             </div>
         </div>
     );
 };
 
 export default HeroSection;
+
+
 
 
 
