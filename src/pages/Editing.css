@@ -47,8 +47,7 @@
 
 /* Стиль для текста */
 .editing-content p {
-    font-family: 'Roboto', sans-serif; /* Используем Roboto */
-    font-size: 1.05rem; /* Увеличиваем шрифт */
+    font-size: 1.1rem; /* Увеличиваем шрифт */
     color: #495057; /* Тёмно-серый текст */
     line-height: 1.8; /* Пространство между строками */
     margin-bottom: 15px; /* Отступы между абзацами */
