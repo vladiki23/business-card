@@ -5,7 +5,7 @@ const Editing = () => {
     return (
         <div className="editing-container">
             <div className="container py-5">
-                <h1 className="text-center mt-3">Editing Services</h1>
+                <h1 className="text-center mt-3 highlighted-title">Editing Services</h1>
                 <div className="editing-content">
                     {/* Блок с видео */}
                     <div className="editing-video-wrapper">
@@ -66,7 +66,7 @@ const Editing = () => {
                             handle the rest. My efficient workflow ensures your project stays on time and within budget.
                         </p>
                         <p>
-                            I’m <span className="highlight">flexible and customer-focused</span>, so feel free to reach
+                            I’m <span>flexible and customer-focused</span>, so feel free to reach
                             out to discuss projects of any scale. I’ll provide an immediate quote and a clear breakdown
                             of the workflow.
                         </p>

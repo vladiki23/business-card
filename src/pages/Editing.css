@@ -34,12 +34,8 @@
 
 /* Стили для заголовков */
 .highlighted-title {
-    font-family: 'Roboto', sans-serif; /* Используем Roboto */
-    font-size: 1.8rem; /* Размер шрифта */
-    font-weight: 500; /* Тонкий шрифт */
-    color: #007bff; /* Синий цвет */
-    margin-bottom: 20px; /* Отступ снизу */
-
+    font-size: 2rem; /* Размер шрифта */
+    font-weight: 300;
 }
 
 /* Стили для текста */
@@ -57,13 +53,6 @@
     line-height: 1.8; /* Пространство между строками */
     margin-bottom: 15px; /* Отступы между абзацами */
     font-weight: 300; /* Тонкий шрифт */
-}
-
-/* Стили для выделенных фраз */
-.editing-content .highlight {
-    font-family: 'Roboto', sans-serif; /* Используем Roboto */
-    font-weight: 250; /* Жирный текст для акцентов */
-    color: #007bff; /* Синий цвет для акцентов */
 }
 
 /* Для адаптивности */
