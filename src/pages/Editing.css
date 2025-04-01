@@ -34,24 +34,20 @@
 
 /* Стили для заголовков */
 .highlighted-title {
-    font-size: 2rem; /* Размер шрифта */
-    font-weight: 300;
+    margin-top: 20px;
+    font-family: Arial;
 }
 
 /* Стили для текста */
 .editing-text-wrapper {
     width: 50%; /* Текст занимает оставшуюся часть ширины */
-    padding-left: 20px; /* Отступ слева от текста */
-    font-weight: 250;
 }
 
 /* Стиль для текста */
-.editing-content p {
-    font-size: 1.1rem; /* Увеличиваем шрифт */
+.editing-text-wrapper p {
+    font-family: Arial;
     color: #495057; /* Тёмно-серый текст */
-    line-height: 1.8; /* Пространство между строками */
-    margin-bottom: 15px; /* Отступы между абзацами */
-    font-weight: 300; /* Тонкий шрифт */
+    margin-bottom: 25px; /* Отступы между абзацами */
 }
 
 /* Для адаптивности */

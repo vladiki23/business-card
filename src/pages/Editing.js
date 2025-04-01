@@ -5,7 +5,7 @@ const Editing = () => {
     return (
         <div className="editing-container">
             <div className="container py-5">
-                <h1 className="text-center mt-3 highlighted-title">Editing Services</h1>
+                <h1 className="text-center highlighted-title">Editing Services</h1>
                 <div className="editing-content">
                     {/* Блок с видео */}
                     <div className="editing-video-wrapper">
@@ -31,7 +31,7 @@ const Editing = () => {
 
                     {/* Блок с текстом */}
                     <div className="editing-text-wrapper">
-                        <p className="highlighted-title">
+                        <p>
                             Bringing Your Story to Life with Colour, Sound & Emotion
                         </p>
                         <p>
@@ -54,7 +54,7 @@ const Editing = () => {
                             With a sharp eye for detail and a passion for storytelling, I bring footage to life—turning
                             ideas into powerful, polished visuals that leave a lasting impact.
                         </p>
-                        <p className="highlighted-title">
+                        <p>
                             Experience & Workflow
                         </p>
                         <p>
