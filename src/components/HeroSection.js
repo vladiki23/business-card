@@ -2,41 +2,46 @@ import React, { useState } from 'react';
 import './HeroSection.css';
 
 const HeroSection = () => {
-    const [isLoading, setIsLoading] = useState(true);
+    const [playWithSound, setPlayWithSound] = useState(false);
 
-    const handleVideoLoaded = () => {
-        setIsLoading(false);
+    const handlePlayClick = () => {
+        setPlayWithSound(true);
     };
 
     return (
         <div className="hero-container">
             <div className="video-container">
-                {/* Индикатор загрузки */}
-                {isLoading && (
-                    <div className="loading-overlay">
-                        <div className="loading-bars">
-                            <div className="loading-bar"></div>
-                            <div className="loading-bar"></div>
-                            <div className="loading-bar"></div>
-                            <div className="loading-bar"></div>
-                        </div>
-                    </div>
-                )}
                 <iframe
-                    title="vimeo-background"
-                    src="https://player.vimeo.com/video/1070058633?h=8fdb35769f&autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+                    src={
+                        playWithSound
+                            ? "https://player.vimeo.com/video/1070058633?h=8fdb35769f&autoplay=1&loop=1"
+                            : "https://player.vimeo.com/video/1070058633?h=8fdb35769f&autoplay=1&muted=1&loop=1&background=1"
+                    }
                     frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
+                    allow="autoplay; fullscreen"
                     allowFullScreen
-                    className="hero-video"
-                    onLoad={handleVideoLoaded} // Событие срабатывает, когда видео загружено
-                />
+                    title="Vimeo Video"
+                ></iframe>
+
+                {!playWithSound && (
+                    <button className="sound-button" onClick={handlePlayClick}>
+                        🔊 Включить звук
+                    </button>
+                )}
             </div>
         </div>
     );
 };
 
 export default HeroSection;
+
+
+
+
+
+
+
+
 
 
 

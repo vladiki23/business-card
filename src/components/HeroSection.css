@@ -3,8 +3,6 @@
     height: 100vh; /* Занимает весь экран */
     width: 100%; /* Ширина 100% */
     overflow: hidden; /* Скрыть части видео, выходящие за пределы */
-    margin: 0;
-    padding: 0;
 }
 
 .video-container {
@@ -28,44 +26,51 @@
     pointer-events: none;
 }
 
-.loading-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.plyr__video-wrapper {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 10;
 }
 
-.loading-bars {
+.plyr__controls {
     display: flex;
     justify-content: space-between;
-    width: 60px;
-    height: 20px;
+    align-items: center;
 }
 
-.loading-bar {
-    width: 6px;
-    height: 100%;
-    background-color: #000000;
-    animation: barAnimation 1.2s infinite ease-in-out;
+.plyr__control {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-@keyframes barAnimation {
-    0%, 100% {
-        transform: scaleY(1); /* Начинаем с нормального размера */
-    }
-    50% {
-        transform: scaleY(0.3); /* Сжимаем полоску в 3 раза */
-    }
+.sound-button {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
 }
+
+.sound-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+    .hero-container {
+        height: 75vh; /* Занимает весь экран */
+        margin-top: -110px;
+    }
+
     .video-container {
         max-width: 100%;
         height: 100vh; /* Видео заполняет экран на мобильных */
