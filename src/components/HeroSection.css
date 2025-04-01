@@ -70,16 +70,24 @@
 }
 
 @media (max-width: 480px) {
+    .hero-container {
+        height: 70vh; /* Занимает весь экран */
+        margin-top: -100px;
+    }
+
     .video-container {
-        height: 80vh; /* Немного уменьшаем высоту для маленьких экранов */
+        max-width: 100%;
+        height: 100vh; /* Видео заполняет экран на мобильных */
     }
 
     .video-container iframe {
-        height: 100%; /* Видео будет занимать всю высоту */
+        height: 100%; /* Видео будет занимать всю высоту экрана */
     }
     .sound-button {
-        margin-bottom: 190px;
-        padding: 6px 12px;
+        margin-bottom: 270px;
+        bottom: 12px;
+        right: 12px;
+        padding: 8px 12px;
         font-size: 13px;
     }
 }
