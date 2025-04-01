@@ -61,7 +61,7 @@
         height: 100%; /* Видео будет занимать всю высоту экрана */
     }
     .sound-button {
-        margin-bottom: 190px;
+        margin-bottom: 255px;
         bottom: 12px;
         right: 12px;
         padding: 8px 12px;
