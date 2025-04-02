@@ -42,7 +42,7 @@ const HeroSection = () => {
             <div className="video-container">
                 <iframe
                     ref={iframeRef}
-                    src="https://player.vimeo.com/video/1070089100?background=1&autoplay=1&muted=1&loop=1"
+                    src="https://player.vimeo.com/video/1070089100?background=1&autoplay=1&loop=1&muted=1"
                     frameBorder="0"
                     allow="autoplay; fullscreen"
                     allowFullScreen

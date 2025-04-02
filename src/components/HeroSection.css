@@ -19,9 +19,6 @@
     width: 120vw;
     height: 120vh;
     transform: translate(-50%, -50%);
-    object-fit: cover;
-    border: none;
-    pointer-events: none;
 }
 
 .sound-button {
