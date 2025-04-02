@@ -29,9 +29,7 @@
 
 .about-image {
     width: 200px;
-    height: 200px;
     object-fit: cover; /* Избегаем искажений картинки */
-    border: 5px solid #fff; /* Белая рамка */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
