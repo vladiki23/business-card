@@ -35,7 +35,7 @@
 /* Стили для заголовков */
 .highlighted-title {
     margin-top: 20px;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Стили для текста */
@@ -45,7 +45,7 @@
 
 /* Стиль для текста */
 .editing-text-wrapper p {
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     color: #495057; /* Тёмно-серый текст */
     margin-bottom: 25px; /* Отступы между абзацами */
 }
