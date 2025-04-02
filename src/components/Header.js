@@ -68,7 +68,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <button
-                                    className="nav-link btn btn-link text-info"
+                                    className="nav-link btn btn-link"
                                     onClick={() => {
                                         handleOpenModal();
                                         handleNavLinkClick();

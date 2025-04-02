@@ -22,12 +22,12 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #00bcd4; /* Голубой цвет при наведении */
+    color: #1b1c22; /* Голубой цвет при наведении */
     transform: scale(1.05); /* Легкое увеличение текста */
 }
 
 .navbar-nav .nav-link:active {
-    color: #008c92; /* Тёмно-голубой при активном нажатии */
+    color: #1b1c22; /* Тёмно-голубой при активном нажатии */
 }
 
 .logo-text {
@@ -38,7 +38,7 @@
 }
 
 .logo-text:hover {
-    color: #00bcd4 !important; /* Голубой цвет при наведении */
+    color: #1b1c22 !important; /* Голубой цвет при наведении */
     text-decoration: none;
 }
 
@@ -54,7 +54,7 @@
 /* Кнопка Contact */
 .nav-link.btn-link.text-info {
     font-size: 1rem; /* Уменьшаем размер кнопки */
-    color: #00bcd4;
+    color: #1b1c22;
     text-transform: uppercase;
     font-weight: normal;
     background: none; /* Убираем фон */
@@ -63,7 +63,7 @@
 }
 
 .nav-link.btn-link.text-info:hover {
-    color: #008c92; /* Голубой цвет при наведении */
+    color: #1b1c22; /* Голубой цвет при наведении */
     text-decoration: underline; /* Подчеркнутый текст */
 }
 

@@ -19,8 +19,9 @@
 }
 
 .about-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     flex: 1;
+    margin-right: 100px;
 }
 
 .about-image-wrapper {
@@ -31,6 +32,7 @@
     width: 200px;
     object-fit: cover; /* Избегаем искажений картинки */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-left: 1rem;
 }
 
 .about-heading {
