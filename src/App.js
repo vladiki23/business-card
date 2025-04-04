@@ -5,10 +5,14 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import DroneServices from './pages/DroneServices';
+import DroneFilming from './pages/DroneServices/DroneFilming';
+import CommercialDrone from './pages/DroneServices/CommercialDroneServices';
+import DroneSurvey from './pages/DroneServices/DroneSurvey';
+import RealEstate from './pages/DroneServices/RealEstateDronePhotography';
 import Editing from './pages/Editing';
+
 import './App.css'; // Стили для анимации
 
 function App() {
@@ -46,6 +50,10 @@ function PageTransitions() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/drone-services" element={<DroneServices />} />
+                <Route path="/drone-services/dronefilming" element={<DroneFilming />} />
+                <Route path="/drone-services/CommercialDroneServices" element={<CommercialDrone />} />
+                <Route path="/drone-services/DroneSurvey" element={<DroneSurvey />} />
+                <Route path="/drone-services/RealEstateDronePhotography" element={<RealEstate />} />
                 <Route path="/editing" element={<Editing />} />
             </Routes>
         </motion.div>
