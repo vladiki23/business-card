@@ -50,10 +50,10 @@ function PageTransitions() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/drone-services" element={<DroneServices />} />
-                <Route path="/drone-services/dronefilming" element={<DroneFilming />} />
-                <Route path="/drone-services/CommercialDroneServices" element={<CommercialDrone />} />
-                <Route path="/drone-services/DroneSurvey" element={<DroneSurvey />} />
-                <Route path="/drone-services/RealEstateDronePhotography" element={<RealEstate />} />
+                <Route path="/drone-services/drone-filming" element={<DroneFilming />} />
+                <Route path="/drone-services/commercial-drone-services" element={<CommercialDrone />} />
+                <Route path="/drone-services/drone-survey" element={<DroneSurvey />} />
+                <Route path="/drone-services/real-estate-drone-photography" element={<RealEstate />} />
                 <Route path="/editing" element={<Editing />} />
             </Routes>
         </motion.div>
