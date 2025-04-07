@@ -1,18 +1,11 @@
-html, body {
+body {
+  background-color: white;
   margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Минимальная высота всей страницы */
-}
-
-.content {
-  flex: 1; /* Контент занимает всё доступное пространство */
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  letter-spacing: 0 !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  color: #666 !important;
 }
 
 footer {
@@ -41,7 +34,12 @@ footer {
   transition: opacity 500ms ease-in-out;
 }
 
-
+.page-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 100vh; /* отступ на всю высоту видео */
+  background-color: #fff;
+}
 
 
 

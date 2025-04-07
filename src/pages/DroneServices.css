@@ -24,8 +24,22 @@
 
 .service-title {
     margin-top: 18px;
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.service-title:hover {
+    color: #0d041b;
+    transform: translateY(-2px);
+}
+
+.service-title, a {
+    text-decoration: none !important;
 }
 
 .tabs-container {

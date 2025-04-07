@@ -1,28 +1,26 @@
-/* Общий фон и цвета */
-.header {
-    position: relative;
-    z-index: 10;
-}
-
 .navbar {
     background-color: rgba(0, 0, 0, 0.4); /* Прозрачный темный фон */
     padding: 8px 20px;
     transition: background-color 0.3s ease;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #666;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-nav .nav-link {
     text-transform: uppercase;
-    font-size: 0.95rem; /* Уменьшаем размер текста */
-    color: #f8f9fa; /* Белый текст */
-    padding: 0.5rem 1rem; /* Уменьшаем отступы */
+    font-size: 0.90rem; /* Уменьшаем размер текста */
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff; /* Белый текст */
+    padding: 0.5rem; /* Уменьшаем отступы */
     transition: color 0.3s ease, transform 0.3s ease;
-    font-weight: normal;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #1b1c22; /* Голубой цвет при наведении */
+    color: #000000; /* Голубой цвет при наведении */
     transform: scale(1.05); /* Легкое увеличение текста */
 }
 
@@ -31,15 +29,14 @@
 }
 
 .logo-text {
-    font-size: 1.3rem; /* Уменьшаем размер логотипа */
-    font-weight: bold;
+    font-size: 1.2rem !important; /* Уменьшаем размер логотипа */
+    font-weight: 700;
+    letter-spacing: 2px;
     color: #fff !important;
-    text-transform: uppercase;
 }
 
 .logo-text:hover {
     color: #1b1c22 !important; /* Голубой цвет при наведении */
-    text-decoration: none;
 }
 
 /* Анимация для мобильного меню */
@@ -47,51 +44,20 @@
     transition: transform 0.3s ease;
 }
 
-.navbar-collapse.show {
-    transform: translateY(0);
-}
-
-/* Кнопка Contact */
-.nav-link.btn-link.text-info {
-    font-size: 1rem; /* Уменьшаем размер кнопки */
-    color: #1b1c22;
-    text-transform: uppercase;
-    font-weight: normal;
-    background: none; /* Убираем фон */
-    border: none; /* Убираем обводку */
-    text-decoration: none; /* Убираем подчеркивание */
-}
-
-.nav-link.btn-link.text-info:hover {
-    color: #1b1c22; /* Голубой цвет при наведении */
-    text-decoration: underline; /* Подчеркнутый текст */
-}
-
-.nav-link.btn-link.text-info:focus {
-    outline: none; /* Убираем фокусный контур */
-}
 
 /* Убираем обводку вокруг кнопки бургер-меню */
-.navbar-toggler:focus {
-    outline: none; /* Убираем стандартный контур */
-    box-shadow: none; /* Убираем тень */
-    border: none;
-}
-
 .navbar-toggler {
     --bs-border-width: 0; /* Устанавливаем ширину границы в 0 */
     border: none; /* Убираем все границы */
     box-shadow: none;
 }
 
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgb(22 27 33 / 53%) !important;
+.navbar-toggler:focus {
+    outline: none !important; /* Убираем стандартный контур */
+    box-shadow: none !important; /* Убираем тень */
+    border: none !important;
 }
 
-.icon {
-    vertical-align: -3px; /* Для поднятия иконки (попробуй -3px, чтобы поднять на 1 см) */
-}
 
 
 

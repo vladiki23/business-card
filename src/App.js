@@ -12,6 +12,7 @@ import CommercialDrone from './pages/DroneServices/CommercialDroneServices';
 import DroneSurvey from './pages/DroneServices/DroneSurvey';
 import RealEstate from './pages/DroneServices/RealEstateDronePhotography';
 import Editing from './pages/Editing';
+import HeroSection from './components/HeroSection';
 
 import './App.css'; // Стили для анимации
 

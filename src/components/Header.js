@@ -28,8 +28,8 @@ const Header = () => {
         <header className="header">
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container">
-                    <Link className="navbar-brand logo-text "  to="/" onClick={handleNavLinkClick}>
-                        <TbDrone style={{ marginRight: '8px', fontSize: '1.2rem', verticalAlign: '-2px'}} /> {/* Иконка рядом с текстом */}
+                    <Link className="navbar-brand logo-text"  to="/" onClick={handleNavLinkClick}>
+                        <TbDrone style={{ marginRight: '1px', fontSize: '1.2rem', verticalAlign: '-2px'}} /> {/* Иконка рядом с текстом */}
                         DRONE-PILOT.CO.UK
                     </Link>
                     <button
