@@ -40,6 +40,7 @@ const DroneServices = () => {
                             <Link to={service.path} className="service-card-link">
                                 <div className="service-card">
                                     <img
+                                        loading="lazy"
                                         src={service.image}
                                         alt={service.title}
                                         className="img-fluid service-image"
@@ -56,6 +57,7 @@ const DroneServices = () => {
 };
 
 export default DroneServices;
+
 
 
 

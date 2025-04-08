@@ -4,22 +4,21 @@
 }
 
 .service-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
     text-align: center;
-    margin-bottom: 20px; /* Отступы между карточками */
-    position: relative;
-    overflow: hidden; /* Скрыть все, что выходит за пределы контейнера */
+    border-radius: 8px;
+}
+
+.service-card:hover {
+    transform: scale(1.02);
 }
 
 .service-image {
-    object-fit: cover; /* Обрезка изображения, чтобы оно заполнило контейнер */
-    transition: transform 0.8s ease-in-out; /* Плавный переход для изменения размера */
-}
-
-.service-image:hover {
-    transform: scale(1.1); /* Увеличиваем изображение на 10% при наведении */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .service-title {
