@@ -1,27 +1,34 @@
 // generate-sitemap.js
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream } = require('fs');
+const path = require('path');
 
-const sitemap = new SitemapStream({ hostname: 'https://www.drone-pilot.co.uk/' });
+(async () => {
+    const sitemap = new SitemapStream({ hostname: 'https://www.drone-pilot.co.uk' });
 
-const pages = [
-    '/',
-    '/about',
-    '/drone-services',
-    '/drone-services/drone-filming',
-    '/drone-services/commercial-drone-services',
-    '/drone-services/drone-survey',
-    '/drone-services/real-estate-drone-photography',
-    '/editing',
-    '/faq',
-    '/contact'
-];
+    const writeStream = createWriteStream(path.resolve(__dirname, 'public', 'sitemap.xml'));
+    sitemap.pipe(writeStream);
 
-const writeStream = createWriteStream('./public/sitemap.xml');
+    const pages = [
+        '/',
+        '/about',
+        '/drone-services',
+        '/drone-services/drone-filming',
+        '/drone-services/commercial-drone-services',
+        '/drone-services/drone-survey',
+        '/drone-services/real-estate-drone-photography',
+        '/editing',
+        '/faq',
+        '/contact'
+    ];
 
-pages.forEach((url) => sitemap.write({ url }));
+    pages.forEach((url) => {
+        sitemap.write({ url });
+    });
 
-sitemap.end();
-streamToPromise(sitemap).then(() => {
-    console.log('✅ Sitemap generated!');
-});
+    sitemap.end();
+
+    await streamToPromise(sitemap);
+    console.log('✅ Sitemap создан: public/sitemap.xml');
+})();
+
