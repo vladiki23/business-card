@@ -10,7 +10,7 @@ const HeroSection = () => {
     useEffect(() => {
         if (iframeRef.current) {
             const vimeoPlayer = new Player(iframeRef.current, {
-                id: 1070089100, // убедись, что ID правильный
+                id: 1070058633,
                 autoplay: true,
                 muted: true,
                 loop: true,
@@ -19,12 +19,7 @@ const HeroSection = () => {
 
             vimeoPlayer.ready().then(() => {
                 setPlayer(vimeoPlayer);
-                setMuted(true);
-
-                // Пытаемся установить качество 720p
-                vimeoPlayer.setQuality('720p').catch((error) => {
-                    console.warn('Unable to set quality:', error.name);
-                });
+                setMuted(true); // устанавливаем в true для корректного старта
             });
         }
     }, []);
@@ -47,7 +42,7 @@ const HeroSection = () => {
             <div className="video-container">
                 <iframe
                     ref={iframeRef}
-                    src="https://player.vimeo.com/video/797136699?background=1&autoplay=1&loop=1&muted=1"
+                    src="https://player.vimeo.com/video/1070089100?background=1&autoplay=1&loop=1&muted=1"
                     frameBorder="0"
                     allow="autoplay; fullscreen"
                     allowFullScreen
