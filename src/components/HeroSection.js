@@ -10,7 +10,7 @@ const HeroSection = () => {
     useEffect(() => {
         if (iframeRef.current) {
             const vimeoPlayer = new Player(iframeRef.current, {
-                id: 1070058633,
+                id: 1070089100, // убедись, что ID правильный
                 autoplay: true,
                 muted: true,
                 loop: true,
@@ -19,7 +19,12 @@ const HeroSection = () => {
 
             vimeoPlayer.ready().then(() => {
                 setPlayer(vimeoPlayer);
-                setMuted(true); // устанавливаем в true для корректного старта
+                setMuted(true);
+
+                // Пытаемся установить качество 720p
+                vimeoPlayer.setQuality('720p').catch((error) => {
+                    console.warn('Unable to set quality:', error.name);
+                });
             });
         }
     }, []);
