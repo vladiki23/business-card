@@ -1,24 +1,30 @@
 .hero-container {
     position: relative;
-    height: 100vh; /* Занимает весь экран */
-    width: 100%; /* Ширина 100% */
-    overflow: hidden; /* Скрыть части видео, выходящие за пределы */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px; /* отступ вокруг всего блока */
+    box-sizing: border-box;
 }
 
 .video-container {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: black;
 }
 
-/* Стиль для iframe, чтобы оно заполнило весь экран */
-.video-container iframe {
+.hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 120vw;
-    height: 120vh;
+    min-width: 100%;
+    min-height: 100%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
 }
 
 .sound-button {
@@ -42,52 +48,42 @@
     transform: scale(1.05);
 }
 
-/* Адаптивность для мобильных устройств */
+/* 📱 Адаптация под телефоны */
 @media (max-width: 768px) {
     .hero-container {
-        height: 75vh; /* Занимает весь экран */
-        margin-top: -110px;
+        height: auto;
+        padding: 10px;
     }
 
     .video-container {
-        max-width: 100%;
-        height: 100vh; /* Видео заполняет экран на мобильных */
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* Соотношение сторон 16:9 */
+        margin-top: 90px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: black;
     }
 
-    .video-container iframe {
-        height: 100%; /* Видео будет занимать всю высоту экрана */
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: none;
     }
+
     .sound-button {
-        margin-bottom: 255px;
         bottom: 12px;
         right: 12px;
-        padding: 8px 12px;
         font-size: 13px;
+        padding: 8px 12px;
     }
 }
 
-@media (max-width: 480px) {
-    .hero-container {
-        height: 70vh; /* Занимает весь экран */
-        margin-top: -100px;
-    }
 
-    .video-container {
-        max-width: 100%;
-        height: 100vh; /* Видео заполняет экран на мобильных */
-    }
-
-    .video-container iframe {
-        height: 100%; /* Видео будет занимать всю высоту экрана */
-    }
-    .sound-button {
-        margin-bottom: 270px;
-        bottom: 12px;
-        right: 12px;
-        padding: 8px 12px;
-        font-size: 13px;
-    }
-}
 
 
 
