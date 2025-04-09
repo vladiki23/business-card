@@ -1,57 +1,20 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Player from '@vimeo/player';
+import React from 'react';
 import './HeroSection.css';
 
 const HeroSection = () => {
-    const iframeRef = useRef(null);
-    const [player, setPlayer] = useState(null);
-    const [muted, setMuted] = useState(true);
-
-    useEffect(() => {
-        if (iframeRef.current) {
-            const vimeoPlayer = new Player(iframeRef.current, {
-                id: 1070058633,
-                autoplay: true,
-                muted: true,
-                loop: true,
-                background: true,
-            });
-
-            vimeoPlayer.ready().then(() => {
-                setPlayer(vimeoPlayer);
-                setMuted(true); // устанавливаем в true для корректного старта
-            });
-        }
-    }, []);
-
-    const toggleMute = async () => {
-        if (!player) return;
-
-        const isMuted = await player.getMuted();
-        if (isMuted) {
-            await player.setMuted(false);
-            setMuted(false);
-        } else {
-            await player.setMuted(true);
-            setMuted(true);
-        }
-    };
-
     return (
         <div className="hero-container">
             <div className="video-container">
-                <iframe
-                    ref={iframeRef}
-                    src="https://player.vimeo.com/video/1073750134?background=1&autoplay=1&loop=1&muted=1"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
-                    title="Vimeo Video"
-                ></iframe>
-
-                <button className="sound-button" onClick={toggleMute}>
-                    {muted ? 'Unmute' : 'Mute'}
-                </button>
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="hero-video"
+                >
+                    <source src="/videos/hero-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     );
