@@ -7,25 +7,25 @@ const services = [
         id: 1,
         title: 'Drone Filming',
         path: '/drone-services/drone-filming',
-        image: '/path-to-images/drone-filming.jpg',
+        image: '/path-to-images/drone-filming.webp',
     },
     {
         id: 2,
         title: 'Commercial Drone Services',
         path: '/drone-services/commercial-drone-services',
-        image: '/path-to-images/commercial-drone.jpg',
+        image: '/path-to-images/commercial-drone.webp',
     },
     {
         id: 3,
         title: 'Drone Survey',
         path: '/drone-services/drone-survey',
-        image: '/path-to-images/drone-survey.jpeg',
+        image: '/path-to-images/drone-survey.webp',
     },
     {
         id: 4,
         title: 'Real Estate Drone Photography',
         path: '/drone-services/real-estate-drone-photography',
-        image: '/path-to-images/real-estate-drone.png',
+        image: '/path-to-images/real-estate-drone.webp',
     },
 ];
 
