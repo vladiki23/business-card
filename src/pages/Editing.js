@@ -1,11 +1,13 @@
 import React from 'react';
 import './Editing.css';
+import './About.css'
+
 
 const Editing = () => {
     return (
-        <div className="editing-container">
+        <div className="editing-container about-heading">
             <div className="container py-5">
-                <h1 className="text-center highlighted-title">Editing Services</h1>
+                <h1 className="text-center">Editing Services</h1>
                 <div className="editing-content">
                     {/* Блок с видео */}
                     <div className="editing-video-wrapper">
