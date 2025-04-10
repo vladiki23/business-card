@@ -1,31 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './DroneServices.css';
+import droneFilming from '../assets/drone-filming.webp';
+import commercialDrone from '../assets/commercial-drone.webp';
+import droneSurvey from '../assets/drone-survey.webp';
+import realEstateDrone from '../assets/real-estate-drone.webp';
 
 const services = [
     {
         id: 1,
         title: 'Drone Filming',
         path: '/drone-services/drone-filming',
-        image: '/path-to-images/drone-filming.webp',
+        image: droneFilming,
     },
     {
         id: 2,
         title: 'Commercial Drone Services',
         path: '/drone-services/commercial-drone-services',
-        image: '/path-to-images/commercial-drone.webp',
+        image: commercialDrone,
     },
     {
         id: 3,
         title: 'Drone Survey',
         path: '/drone-services/drone-survey',
-        image: '/path-to-images/drone-survey.webp',
+        image: droneSurvey,
     },
     {
         id: 4,
         title: 'Real Estate Drone Photography',
         path: '/drone-services/real-estate-drone-photography',
-        image: '/path-to-images/real-estate-drone.webp',
+        image: realEstateDrone,
     },
 ];
 
@@ -40,7 +44,6 @@ const DroneServices = () => {
                             <Link to={service.path} className="service-card-link">
                                 <div className="service-card">
                                     <img
-                                        loading="lazy"
                                         src={service.image}
                                         alt={service.title}
                                         className="img-fluid service-image"
