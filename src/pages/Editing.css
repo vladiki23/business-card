@@ -1,72 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
-
 .editing-container {
-    background-color: #f8f9fa; /* Светло-серый фон всей страницы */
+    background-color: #f8f9fa;
     min-height: 100vh;
     padding: 20px;
 }
 
-/* Контейнер для текста и видео */
 .editing-content {
-    background-color: #e9ecef; /* Серый фон для текста */
+    background-color: #e9ecef;
     padding: 30px;
-    border-radius: 10px; /* Скругленные углы */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
-    display: flex; /* Используем flexbox для горизонтального расположения */
-    justify-content: space-between; /* Равномерно распределяем пространство */
-    align-items: center; /* Выравниваем по центру */
-}
-
-/* Стили для контейнера видео */
-.editing-video-wrapper {
-    width: 35%; /* Видео занимает 50% ширины контейнера */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Видео располагаются одно под другим */
-    gap: -30px; /* Промежуток между видео */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Стили для видео */
+.editing-video-wrapper {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: -30px;
+}
+
 .editing-video-wrapper iframe {
-    width: 100%; /* Видео растягивается на всю ширину контейнера */
-    height: 300px; /* Фиксированная высота видео */
+    width: 100%;
+    height: 300px;
     border: none;
 }
 
-/* Стили для заголовков */
 .highlighted-title {
     margin-top: 20px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000000;
 }
 
-/* Стили для текста */
 .editing-text-wrapper {
-    width: 50%; /* Текст занимает оставшуюся часть ширины */
+    width: 50%;
 }
 
-/* Стиль для текста */
 .editing-text-wrapper p {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #495057; /* Тёмно-серый текст */
-    margin-bottom: 25px; /* Отступы между абзацами */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #495057;
+    margin-bottom: 25px;
 }
 
-/* Для адаптивности */
 @media (max-width: 768px) {
     .editing-content {
-        padding: 20px; /* Уменьшаем отступы для мобильных */
-        flex-direction: column; /* Меняем на вертикальное расположение для мобильных */
-    }
-
-    h1 {
-        font-size: 2rem; /* Уменьшаем шрифт заголовка */
+        padding: 20px;
+        flex-direction: column;
     }
 
     .editing-video-wrapper,
     .editing-text-wrapper {
-        width: 100%; /* Видео и текст занимают всю ширину на мобильных устройствах */
-        padding-left: 0; /* Убираем отступ слева от текста */
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .editing-text-wrapper p {
+        font-size: 0.95rem; /* Меньше шрифт на мобилке */
+        line-height: 1.5;
+    }
+
+    .highlighted-title {
+        font-size: 1.2rem; /* Уменьшаем заголовок */
     }
 }
+
 
 
 
