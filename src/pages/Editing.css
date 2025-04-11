@@ -1,14 +1,11 @@
 .editing-container {
-    background-color: #f8f9fa;
     min-height: 100vh;
     padding: 20px;
 }
 
 .editing-content {
-    background-color: #e9ecef;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,10 +36,12 @@
 }
 
 .editing-text-wrapper p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-family: 'Helvetica Neue', sans-serif;
     color: #495057;
-    margin-bottom: 25px;
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
