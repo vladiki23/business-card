@@ -1,9 +1,10 @@
-// стандартный CRA файл
+// Файл: src/serviceWorkerRegistration.js
+
 const isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
     window.location.hostname === '[::1]' ||
     window.location.hostname.match(
-        /^127(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|\d{1,2})){3}$/
+        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
     )
 );
 
@@ -16,7 +17,11 @@ export function register(config) {
             const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
             if (isLocalhost) {
+                // Проверка на localhost
                 checkValidServiceWorker(swUrl, config);
+                navigator.serviceWorker.ready.then(() => {
+                    console.log('🟢 Service worker is ready (localhost)');
+                });
             } else {
                 registerValidSW(swUrl, config);
             }
@@ -28,12 +33,27 @@ function registerValidSW(swUrl, config) {
     navigator.serviceWorker
         .register(swUrl)
         .then((registration) => {
-            if (registration.waiting) {
-                registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-            }
+            console.log('🟢 Service Worker registered: ', registration);
+
+            registration.onupdatefound = () => {
+                const installingWorker = registration.installing;
+                if (installingWorker == null) return;
+
+                installingWorker.onstatechange = () => {
+                    if (installingWorker.state === 'installed') {
+                        if (navigator.serviceWorker.controller) {
+                            console.log('🔄 New content available');
+                            if (config && config.onUpdate) config.onUpdate(registration);
+                        } else {
+                            console.log('✅ Content cached for offline use.');
+                            if (config && config.onSuccess) config.onSuccess(registration);
+                        }
+                    }
+                };
+            };
         })
         .catch((error) => {
-            console.error('SW registration failed:', error);
+            console.error('🚫 Error during service worker registration:', error);
         });
 }
 
@@ -43,7 +63,7 @@ function checkValidServiceWorker(swUrl, config) {
             const contentType = response.headers.get('content-type');
             if (
                 response.status === 404 ||
-                (contentType && contentType.indexOf('javascript') === -1)
+                (contentType != null && contentType.indexOf('javascript') === -1)
             ) {
                 navigator.serviceWorker.ready.then((registration) => {
                     registration.unregister().then(() => {
@@ -55,14 +75,19 @@ function checkValidServiceWorker(swUrl, config) {
             }
         })
         .catch(() => {
-            console.log('No internet connection. App is running in offline mode.');
+            console.log('⚠️ No internet connection. App is running in offline mode.');
         });
 }
 
 export function unregister() {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.ready
-            .then((registration) => registration.unregister())
-            .catch((error) => console.error(error.message));
+            .then((registration) => {
+                registration.unregister();
+            })
+            .catch((error) => {
+                console.error(error.message);
+            });
     }
 }
+
