@@ -10,11 +10,11 @@ const urlsToCache = [
     '/path-to-images/drone-filming.webp',
     '/path-to-images/commercial-drone.webp',
     '/path-to-images/drone-survey.webp',
-    '/path-to-images/real-estate-drone.webp'
-    '/path-to-images/eu-flag.png'
-    '/path-to-images/easa-logo.jpg'
-    '/path-to-images/images.webp'
-    '/path-to-images/uk-flag.png'
+    '/path-to-images/real-estate-drone.webp',
+    '/path-to-images/eu-flag.png',
+    '/path-to-images/easa-logo.jpg',
+    '/path-to-images/images.webp',
+    '/path-to-images/uk-flag.png',
 ];
 
 self.addEventListener('install', (event) => {
