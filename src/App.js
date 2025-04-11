@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Импортируем Framer Motion для анимаций
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -39,13 +38,6 @@ function PageTransitions() {
     }, [location]); // Срабатывает при изменении пути
 
     return (
-        <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.75 }}
-        >
             <Routes location={location}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
@@ -57,7 +49,6 @@ function PageTransitions() {
                 <Route path="/drone-services/real-estate-drone-photography" element={<RealEstate />} />
                 <Route path="/editing" element={<Editing />} />
             </Routes>
-        </motion.div>
     );
 }
 

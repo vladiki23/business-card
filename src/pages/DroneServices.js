@@ -1,35 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './DroneServices.css';
-import droneFilming from '../assets/drone-filming.webp';
-import commercialDrone from '../assets/commercial-drone.webp';
-import droneSurvey from '../assets/drone-survey.webp';
-import realEstateDrone from '../assets/real-estate-drone.webp';
 
 const services = [
     {
         id: 1,
         title: 'Drone Filming',
         path: '/drone-services/drone-filming',
-        image: droneFilming,
+        image: '/path-to-images/drone-filming.webp',
     },
     {
         id: 2,
         title: 'Commercial Drone Services',
         path: '/drone-services/commercial-drone-services',
-        image: commercialDrone,
+        image: '/path-to-images/commercial-drone.webp',
     },
     {
         id: 3,
         title: 'Drone Survey',
         path: '/drone-services/drone-survey',
-        image: droneSurvey,
+        image: '/path-to-images/drone-survey.webp',
     },
     {
         id: 4,
         title: 'Real Estate Drone Photography',
         path: '/drone-services/real-estate-drone-photography',
-        image: realEstateDrone,
+        image: '/path-to-images/real-estate-drone.webp',
     },
 ];
 
