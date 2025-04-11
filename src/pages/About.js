@@ -8,7 +8,7 @@ const About = () => {
             <div className="about-content">
                 {/* Блок с текстом */}
                 <div className="about-text">
-                    <h1 className="about-heading">About Me</h1>
+                    <h1 className="about-heading text-center">About Me</h1>
                     <p>
                         I’m a freelance drone operator, video editor, and colourist based in London.
                     </p>
